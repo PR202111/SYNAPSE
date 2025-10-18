@@ -1,4 +1,3 @@
-# db.py
 import os
 import pandas as pd
 from langchain_ollama import OllamaEmbeddings

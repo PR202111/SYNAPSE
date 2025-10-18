@@ -1,4 +1,3 @@
-# speech.py
 import tempfile
 from gtts import gTTS
 from playsound3 import playsound
@@ -9,9 +8,9 @@ def speak_text(text, lang_code='en'):
     tts = gTTS(text=text, lang=lang_code, slow=False)
     with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as fp:
         tts.save(fp.name)
-        # Increase speed using pydub
+       
         sound = AudioSegment.from_file(fp.name)
-        faster_sound = sound.speedup(playback_speed=1.3)  # 1.3x speed
+        faster_sound = sound.speedup(playback_speed=1.3)  
         play(faster_sound)
 
 def get_input_text():

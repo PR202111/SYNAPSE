@@ -1,4 +1,3 @@
-# agent.py
 from langdetect import detect
 from deep_translator import GoogleTranslator
 from speech import speak_text, get_input_text

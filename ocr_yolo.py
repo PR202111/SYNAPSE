@@ -1,4 +1,3 @@
-# ocr_yolo.py
 import cv2
 import easyocr
 from ultralytics import YOLO
@@ -30,12 +29,12 @@ def capture_image():
     return captured_file
 
 def process_image(image_path):
-    # OCR
+
     ocr_result = reader.readtext(image_path, detail=0, paragraph=True)
     extracted_text = " ".join(ocr_result)
     print(f"Extracted Text: {extracted_text}")
 
-    # YOLO detection
+
     results = yolo_model.predict(image_path)
     best_conf = 0
     best_class = None

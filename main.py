@@ -1,4 +1,3 @@
-# main.py
 from config import DB_LOCATION
 from db import setup_vector_db
 from agent import run_agent
@@ -6,7 +5,7 @@ from ocr_yolo import capture_image, process_image
 from langchain_ollama.llms import OllamaLLM
 
 if __name__ == "__main__":
-    agent_llm = OllamaLLM(model="llama3.2")
+    agent_llm = OllamaLLM(model="artifish/llama3.2-uncensored")
     retriever = setup_vector_db()
 
     medicine_name = ""
