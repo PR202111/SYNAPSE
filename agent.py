@@ -37,7 +37,7 @@ def run_agent(agent_llm, retriever, yolo_output="", ocr_output=""):
         print(f"🧠 User query (EN): {english_text}")
 
         # Retrieve info
-        docs = retriever.get_relevant_documents(english_text)
+        docs = retriever.invoke(english_text)
         info_text = "\n".join([doc.page_content for doc in docs])
 
         # Only include YOLO/OCR if available
@@ -49,12 +49,14 @@ def run_agent(agent_llm, retriever, yolo_output="", ocr_output=""):
 
         # Prompt LLM
         prompt_text = f"""
-        You are a Doctor's assistant AI. Use the following info:
+        You are a Doctor's assistant and you are autorized to give information on what is asked. and if you dont have
+        any idea about the question then deny it gracefully 
+        Use the following info:
         {combined_info}
 
         User question: {english_text}
         """
-        agent_response = agent_llm.predict(prompt_text)
+        agent_response = agent_llm.invoke(prompt_text)
 
         # Translate back to user language
         translated_response = GoogleTranslator(source='en', target=preferred_lang).translate(agent_response)

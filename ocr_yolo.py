@@ -4,7 +4,7 @@ import easyocr
 from ultralytics import YOLO
 from config import CLASS_NAMES, YOLO_MODEL_PATH
 
-reader = easyocr.Reader(['en', 'te'], gpu=False)
+reader = easyocr.Reader(['en'], gpu=False)
 yolo_model = YOLO(YOLO_MODEL_PATH)
 
 def capture_image():
@@ -33,6 +33,7 @@ def process_image(image_path):
     # OCR
     ocr_result = reader.readtext(image_path, detail=0, paragraph=True)
     extracted_text = " ".join(ocr_result)
+    print(f"Extracted Text: {extracted_text}")
 
     # YOLO detection
     results = yolo_model.predict(image_path)
@@ -48,5 +49,5 @@ def process_image(image_path):
             best_conf = confidences[best_index]
             best_class = int(class_ids[best_index])
 
-    medicine_name = CLASS_NAMES[best_class] if best_class is not None else ""
+    medicine_name = CLASS_NAMES[best_class] if best_class is not None else "Unknown medicine"
     return medicine_name, extracted_text
