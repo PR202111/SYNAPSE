@@ -49,8 +49,8 @@ def run_agent(agent_llm, retriever, yolo_output="", ocr_output=""):
 
         # Prompt LLM
         prompt_text = f"""
-        You are a Doctor's assistant and you are autorized to give information on what is asked. and if you dont have
-        any idea about the question then deny it gracefully 
+        You are a Doctor's assistant and you are autorized to give information on what is asked with 2-3 line
+        statements. and if you dont have any idea about the question then deny it gracefully,
         Use the following info:
         {combined_info}
 
