@@ -14,7 +14,7 @@ def run_agent(agent_llm, retriever, yolo_output="", ocr_output=""):
     preferred_lang = input("Enter language code (default: en): ").lower()
     if preferred_lang not in SUPPORTED_LANGS:
         preferred_lang = 'en'
-    print(f"✅ Language: {SUPPORTED_LANGS[preferred_lang]}")
+    print(f"Language: {SUPPORTED_LANGS[preferred_lang]}")
 
     while True:
         print("\n--- Conversation ---")
@@ -22,7 +22,7 @@ def run_agent(agent_llm, retriever, yolo_output="", ocr_output=""):
         if not user_input:
             continue
         if user_input.lower() in ['exit', 'quit', 'bye']:
-            print("👋 Goodbye!")
+            print("Goodbye!")
             speak_text("Goodbye!", TTS_LANG_MAP[preferred_lang])
             break
 
@@ -34,7 +34,7 @@ def run_agent(agent_llm, retriever, yolo_output="", ocr_output=""):
 
         # Translate to English
         english_text = GoogleTranslator(source='auto', target='en').translate(user_input)
-        print(f"🧠 User query (EN): {english_text}")
+        print(f"User query (EN): {english_text}")
 
         # Retrieve info
         docs = retriever.invoke(english_text)
@@ -47,7 +47,7 @@ def run_agent(agent_llm, retriever, yolo_output="", ocr_output=""):
         if ocr_output:
             combined_info += f"\nOCR text: {ocr_output}"
 
-        # Prompt LLM
+        # Prompt
         prompt_text = f"""
         You are a Doctor's assistant and you are autorized to give information on what is asked with 2-3 line
         statements. and if you dont have any idea about the question then deny it gracefully,
@@ -58,9 +58,9 @@ def run_agent(agent_llm, retriever, yolo_output="", ocr_output=""):
         """
         agent_response = agent_llm.invoke(prompt_text)
 
-        # Translate back to user language
+        # Translate
         translated_response = GoogleTranslator(source='en', target=preferred_lang).translate(agent_response)
-        print(f"💬 Response ({SUPPORTED_LANGS[preferred_lang]}): {translated_response}")
+        print(f"Response ({SUPPORTED_LANGS[preferred_lang]}): {translated_response}")
 
         # Speak
         speak_text(translated_response, TTS_LANG_MAP[preferred_lang])

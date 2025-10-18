@@ -9,7 +9,7 @@ yolo_model = YOLO(YOLO_MODEL_PATH)
 
 def capture_image():
     cap = cv2.VideoCapture(0)
-    print("🎥 Press SPACE to capture, ESC to exit")
+    print("Press SPACE to capture, ESC to exit")
     captured_file = None
 
     while True:
@@ -22,7 +22,7 @@ def capture_image():
         elif key == 32:  # SPACE
             captured_file = "captured.jpg"
             cv2.imwrite(captured_file, frame)
-            print("📸 Image captured!")
+            print("Image captured!")
             break
 
     cap.release()
