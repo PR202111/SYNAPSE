@@ -1,0 +1,40 @@
+Name,Generic Name,Uses,Typical Dosage,Side Effects
+Aspirin,Acetylsalicylic Acid,Pain relief, fever, anti-inflammatory, cardiovascular protection,75–325 mg once daily (heart); 300–600 mg every 4–6 hours (pain/fever),Stomach upset, bleeding, rash
+Crocin,Paracetamol,Fever, mild to moderate pain,500–650 mg every 6–8 hours; max 4g/day,Liver damage (high dose), nausea
+Meftal,Mefenamic Acid,Pain relief, menstrual cramps,500 mg every 8 hours; max 2g/day,Stomach upset, dizziness, nausea
+Paracetamol,Paracetamol,Fever, mild to moderate pain,500–1000 mg every 6–8 hours; max 4g/day,Liver damage (high dose), allergic reactions
+Saridon,Paracetamol + Propyphenazone + Caffeine,Headache, migraine, mild pain relief,1–2 tablets every 6–8 hours; max 6 tablets/day,Stomach upset, dizziness, allergic reactions
+Ibuprofen,Ibuprofen,Pain relief, inflammation, fever,200–400 mg every 4–6 hours; max 1200 mg/day,Stomach upset, nausea, kidney issues
+Naproxen,Naproxen Sodium,Inflammation, pain relief,250–500 mg every 12 hours,Stomach upset, dizziness, headache
+Diclofenac,Diclofenac Sodium,Inflammatory conditions, pain relief,50 mg 2–3 times daily,Stomach upset, liver effects
+Ranitidine,Ranitidine,Acid reflux, heartburn,150 mg twice daily,Headache, dizziness (note: largely withdrawn)
+Omeprazole,Omeprazole,GERD, stomach ulcers,20–40 mg once daily,Headache, nausea
+Cetirizine,Cetirizine,Allergy, hay fever,10 mg once daily,Drowsiness, dry mouth
+Loratadine,Loratadine,Allergy, hay fever,10 mg once daily,Headache, dry mouth
+Levocetirizine,Levocetirizine,Allergic rhinitis,5 mg once daily,Drowsiness, dry mouth
+Fexofenadine,Fexofenadine,Allergic conditions,120 mg once daily,Headache, nausea
+Amoxicillin,Amoxicillin,Bacterial infections,500 mg every 8 hours,Nausea, diarrhea, rash
+Cefixime,Cefixime,Bacterial infections,400 mg once daily,Nausea, diarrhea
+Azithromycin,Azithromycin,Bacterial infections,500 mg once daily,Diarrhea, nausea
+Doxycycline,Doxycycline,Bacterial infections,100 mg twice daily,Nausea, photosensitivity
+Metformin,Metformin,Type 2 diabetes,500–1000 mg twice daily,GI upset, lactic acidosis (rare)
+Glimepiride,Glimepiride,Type 2 diabetes,1–2 mg once daily,Hypoglycemia, nausea
+Insulin,Insulin,Type 1 & 2 diabetes,Variable,Dizziness, hypoglycemia
+Atorvastatin,Atorvastatin,High cholesterol,10–40 mg once daily,Muscle pain, liver enzyme changes
+Rosuvastatin,Rosuvastatin,High cholesterol,5–20 mg once daily,Muscle pain, liver issues
+Simvastatin,Simvastatin,High cholesterol,10–40 mg once daily,Muscle pain, liver issues
+Omeprazole,Omeprazole,Acid reflux,20–40 mg once daily,Headache, nausea
+Pantoprazole,Pantoprazole,GERD, stomach ulcers,40 mg once daily,Headache, diarrhea
+Levothyroxine,Levothyroxine,Hypothyroidism,25–100 mcg once daily,Palpitations, insomnia
+Prednisolone,Prednisolone,Inflammation, immune conditions,5–60 mg daily,Weight gain, mood changes
+Hydrocortisone,Hydrocortisone,Inflammatory conditions,10–20 mg daily,Weight gain, hypertension
+Salbutamol,Salbutamol,Asthma, 2 inhalations every 4–6 hours,Tremor, palpitations
+Montelukast,Montelukast,Asthma,10 mg once daily,Headache, stomach pain
+Levofloxacin,Levofloxacin,Bacterial infections,500 mg once daily,Nausea, tendonitis
+Ciprofloxacin,Ciprofloxacin,Bacterial infections,500 mg twice daily,Nausea, diarrhea
+Metronidazole,Metronidazole,Bacterial & protozoal infections,400–500 mg every 8 hours,Nausea, metallic taste
+Clindamycin,Clindamycin,Bacterial infections,300 mg every 6–8 hours,Diarrhea, nausea
+Tramadol,Tramadol,Pain relief,50–100 mg every 4–6 hours,Nausea, dizziness
+Diclofenac,Diclofenac Sodium,Pain, inflammation,50 mg 2–3 times daily,Stomach upset, liver issues
+Morphine,Morphine,Pain relief,5–20 mg every 4 hours,Constipation, drowsiness
+Diazepam,Diazepam,Anxiety, muscle spasms,2–10 mg 2–4 times daily,Drowsiness, dizziness
